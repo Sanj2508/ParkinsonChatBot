@@ -1,7 +1,8 @@
 langchain
+git+https://github.com/hwchase17/langchain.git#egg=langchain_community&subdirectory=langchain_community
 torch
 accelerate
-#bitsandbytes
+# bitsandbytes (uncomment if needed)
 transformers
 sentence_transformers
 streamlit
