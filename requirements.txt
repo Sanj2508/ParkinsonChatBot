@@ -1,8 +1,6 @@
 langchain
-git+https://github.com/hwchase17/langchain.git#egg=langchain_community&subdirectory=langchain_community
 torch
 accelerate
-# bitsandbytes (uncomment if needed)
 transformers
 sentence_transformers
 streamlit
@@ -11,3 +9,4 @@ faiss-cpu
 altair
 tiktoken
 huggingface-hub
+pymupdf  # for PDF handling, if necessary
