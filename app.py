@@ -8,8 +8,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 
-pdf_path = "./parkinsons_htr_english_20-ns-139_508c.pdf"  # Update path as needed
-loader = PyPDFLoader(pdf_path)
+# Use DirectoryLoader but specify only the filename
+loader = DirectoryLoader('D:/sanja/OneDrive/Documents/ParkinsonChatbot', glob="parkinsons_htr_english_20-ns-139_508c.pdf", loader_cls=PyPDFLoader)
 documents = loader.load()
 
 # Split text into chunks
