@@ -9,7 +9,7 @@ from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 
 # Load the PDF files from the path
-loader = DirectoryLoader('D:/sanja/OneDrive/Documents/ParkinsonChatbot/data/', glob="*.pdf", loader_cls=PyPDFLoader)
+loader = DirectoryLoader('D:\sanja\OneDrive\Documents\ParkinsonChatbot', glob="*.pdf", loader_cls=PyPDFLoader)
 documents = loader.load()
 
 # Split text into chunks
