@@ -11,3 +11,4 @@ altair
 tiktoken
 huggingface-hub
 pymupdf  # for PDF handling, if necessary
+pypdf  # Required for loading PDFs
