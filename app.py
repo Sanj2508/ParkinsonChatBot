@@ -8,10 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 
-# Specify the exact path to your PDF file
-pdf_path = "D:/sanja/OneDrive/Documents/ParkinsonChatbot/parkinsons_htr_english_20-ns-139_508c.pdf"
-
-# Load the PDF file
+pdf_path = "./parkinsons_htr_english_20-ns-139_508c.pdf"  # Update path as needed
 loader = PyPDFLoader(pdf_path)
 documents = loader.load()
 
